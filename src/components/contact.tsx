@@ -46,19 +46,18 @@ const Contact = () => {
   return (
     <section
       className="
-    w-full h-full mb-20
+    w-full h-full lg:w-[85%]  mb-[10rem] lg:my-[10rem]
   "
     >
       <div
-        className="flex lg:flex-row flex-col gap-3 justify-between items-end lg:items-center h-full w-full
-    px-1 py-1"
+        className="flex lg:flex-row flex-col gap-3 justify-between items-end lg:items-center h-full w-full px-1 py-1 "
       >
-        <div className="info flex flex-col items-start justify-start lg:justify-start bg-gradient-to-t w-[98%] lg:w-1/2 from-[#006aff] to-[#f0f0f0] rounded-xl lg:rounded-2xl shadow-2xl h-full lg:h-[80%] px-2 py-3 gap-6">
-          <h1 className="lg:text-8xl text-7xl font-stretch-90% font-[900] bg-gradient-to-r from-[#000000] via-[#002fff] to-blue-500 bg-clip-text text-transparent ">
+        <div className="info flex flex-col items-start justify-start lg:justify-start bg-gradient-to-t w-[98%] lg:w-1/2 from-[#006aff] to-[#f0f0f0] rounded-xl lg:rounded-2xl shadow-2xl h-full lg:h-[80%] px-2 py-3 lg:px-8 gap-6">
+          <h1 className="lg:text-9xl text-7xl font-stretch-90% font-[900] bg-gradient-to-r from-[#000000] via-[#002fff] to-blue-500 bg-clip-text text-transparent ">
             Contact Me
           </h1>
           <div className="details flex flex-col gap-4">
-            <h1 className="lg:text-6xl text-4xl font-[800]">PARAMJIT SAIKIA</h1>
+            <h1 className="lg:text-6xl text-blue-900 text-4xl font-[800]">PARAMJIT SAIKIA</h1>
             <div className="profile-details flex flex-col gap-1 text-md font-semibold">
               <p className="flex gap-2 font-extralight">
                 <Mail />
@@ -88,7 +87,7 @@ const Contact = () => {
             <a
               href="https://github.com/Paramjitsaikia001"
               target="_blank"
-              className=" group hover:text-white text-black  flex md:gap-2 bg-[#ffffff]  hover:bg-[#000000] md:rounded-4xl rounded-full transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer py-4 px-6 h-full"
+              className=" group hover:text-white text-black  flex md:gap-2 bg-[#ffffff]  hover:bg-[#000000] lg:rounded-2xl hover:rounded-4xl rounded-full transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer py-4 px-6 h-full"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 Github
@@ -116,7 +115,7 @@ const Contact = () => {
             <a
               href="https://www.instagram.com/paramjit_saikia/"
               target="_blank"
-              className=" group hover:text-white text-black  flex md:gap-2 md:bg-gradient-to-r  hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2] md:rounded-4xl h-full transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer px-4"
+              className=" group hover:text-white text-black  flex md:gap-2 md:bg-gradient-to-r  hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2] md:rounded-4xl h-full lg:rounded-2xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer px-4"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 Instagram
@@ -129,7 +128,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="drop-a-message rounded-xl lg:rounded-2xl h-[80%]  bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] text-white flex flex-col justify-start items-start gap-8 p-4 w-[98%]  lg:w-[50%]">
+        <div className="drop-a-message rounded-xl lg:rounded-2xl h-[80%]  bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] text-white flex flex-col justify-start items-start gap-8 p-4 w-[98%]  lg:w-[50%] lg:px-8">
           <h1 className="lg:text-8xl text-6xl font-bold">
             Drop a{" "}
             <span className="bg-gradient-to-r from-[#51ff00] to-[#ffffff] bg-clip-text text-transparent">

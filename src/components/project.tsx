@@ -29,25 +29,27 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4">
+    <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative">
+      <div className="line w-[0.1rem] h-[35rem] lg:h-[35rem] bg-[#0015ffde] top-0 left-[5rem] lg:left-[9.5rem] absolute"></div>
+             
+        <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] lg:left-[5rem] top-[55.5%]  text-[#0015ffde] absolute z-[10]" />
       <p
         className="font-light font-sans mx-12 bg-[#000000] text-[#fff] rounded-full"
         style={{ padding: "0.3rem 3rem ", margin: "3rem 1rem " }}
       >
         Projects
       </p>
-      <div className="projects w-[100%] h-full flex justify-center items-center">
-        <Github className="lg:w-[20rem] lg:h-[20rem] w-[17rem] h-[18rem] absolute left-[35%] lg:left-[70%] top-[70%] md:top-[50%] lg:top-[10%] text-[#004cff] animate-pulse" />
-        <div className="line w-[0.1rem] h-[35rem] lg:h-[30rem] bg-[#0015ffde] top-0 left-[5rem] absolute"></div>
-        <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] top-[55.5%]  text-[#0015ffde] absolute" />
+      <div className="projects w-[100%] lg:w-[90%] h-full flex justify-center items-center relative">
+        <Github className="lg:w-[20rem] lg:h-[20rem] w-[15rem] h-[15rem] absolute left-[35%] lg:left-[70%] top-[62%] md:top-[50%] lg:top-[10%] text-[#004cff] animate-pulse " />
+ 
 
-        <div className="projects-items w-full flex flex-col lg:flex-row gap-5 h-full">
+        <div className="projects-items w-full flex flex-col lg:flex-row gap-5 h-full lg:h-fit">
          
          
           <div className="flex flex-col h-full lg:w-1/2 items-center w-full gap-4">
             
             <div
-              className="project-item w-full text-white gap-4  flex lg:flex-row flex-col rounded-lg lg:rounded-lg   bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] py-[1rem] px-4 lg:px-[2rem]"
+              className="project-item w-full text-white gap-4  flex lg:flex-row flex-col rounded-lg lg:rounded-lg   bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] py-[1rem] px-4 lg:px-[2rem] z-[11]"
             >
               <div className="details w-full lg:w-[75%]">
                 <div className="tittle-date w-full flex gap-2 lg:gap-1 items-end h-auto">
@@ -99,7 +101,7 @@ const Project = () => {
             
             
             <div
-              className="project-item  bg-[#ffff] rounded-lg shadow-md  flex flex-col lg:flex-row py-[1rem] px-[1rem] lg:px-[2rem] gap-2"
+              className="project-item  bg-[#ffff]  rounded-lg shadow-md  flex flex-col lg:flex-row py-[1rem] px-[1rem] lg:px-[2rem] gap-2"
             >
               <div className="details lg:w-[78%]">
                 <div className="tittle-date w-full flex gap-2 lg:gap-1 items-end h-auto">

@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar  border-[#0F172A] backdrop-blur-xl border-1 bg-[#ffffff4c] h-[6%] md:h-[8%]  w-[70%] flex justify-between  md:justify-evenly items-center rounded-full fixed top-6  z-[50] overflow-hidden">
+    <nav className="navbar  border-[#0F172A] backdrop-blur-xl border-1 bg-[#ffffff4c] h-[3.5rem] md:h-[8%]  w-[70%] flex justify-between  md:justify-evenly items-center rounded-full fixed top-6  z-[50] overflow-hidden">
       <div className="hamburger hidden">
         {isactive ? <X onClick={toggleMenu} /> : <Tally3 onClick={toggleMenu} />}
       </div>
@@ -51,6 +51,7 @@ const Navbar = () => {
       <a
         href="/ParamjitSaikia_Resume.pdf"
         target="_blank"
+        rel="noopener noreferrer"
         className="h-full w-fit md:w-1/6 items-center cursor-pointer font-sans text-sm font-light flex justify-center "
       >
         <div className="group  cursor-pointer border-1 border-[#0F172A]  flex items-center overflow-hidden justify-center  gap-2 w-[90%] bg-[#0877ff] rounded-full h-[70%] relative before:absolute before:-translate-y-[-100%]  left-0 before:w-[12rem] before:h-[12rem] before:bg-[#00ff2f] before:rounded-full before:transition-transform before:duration-200 before:z-[1]  hover:before:-translate-y-0 before:content-[''] hover:rounded-0 hover:border-1 hover:border-white px-1">

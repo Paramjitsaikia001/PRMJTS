@@ -27,7 +27,7 @@ const Skills = () => {
         <div className="Skills-items w-[98%] lg:w-[90%] flex flex-col lg:flex-row h-full lg:gap-2 gap-4">
 
           <div
-            className="Skills-item w-full lg:w-1/2 bg-[#fff] rounded-lg shadow-md gap-6 flex flex-col py-10 px-8"
+            className="Skills-item w-full lg:w-1/2 bg-[#fff] rounded-lg shadow-md gap-6 flex flex-col py-10 px-8 lg:h-fit"
           >
             <h1 className="lg:text-6xl text-5xl w-full leading-[3rem] font-[900]">
               <span className="text-[#000c26]"> Programming</span>
@@ -82,7 +82,7 @@ const Skills = () => {
           </div>
 
           <div
-            className="Skills-item bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] w-full lg:w-1/2 rounded-lg flex flex-col items-start justify-start gap-6 py-10 px-8"
+            className="Skills-item bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] w-full lg:w-1/2 rounded-lg flex flex-col items-start justify-start gap-6 py-12 px-8 lg:h-fit"
           >
            <h1 className="lg:text-7xl text-6xl flex gap-1 leading-[3rem] font-[900]">
               <span className="text-[#ffffff]">Build</span>
