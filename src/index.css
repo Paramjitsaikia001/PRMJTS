@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme {
+  --animate-wiggle: wiggle 6s linear infinite;
+  @keyframes wiggle {
+    from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+input{
+  padding: 0.5rem 2rem;
+}
