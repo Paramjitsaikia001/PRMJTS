@@ -32,7 +32,7 @@ const Project = () => {
     <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative">
       <div className="line w-[0.1rem] h-[35rem] lg:h-[35rem] bg-[#0015ffde] top-0 left-[5rem] lg:left-[9.5rem] absolute"></div>
              
-        <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] lg:left-[5rem] top-[55.5%]  text-[#0015ffde] absolute z-[10]" />
+        <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] lg:left-[5rem] top-[30%] lg:top-[50%]  text-[#0015ffde] absolute z-[10]" />
       <p
         className="font-light font-sans mx-12 bg-[#000000] text-[#fff] rounded-full"
         style={{ padding: "0.3rem 3rem ", margin: "3rem 1rem " }}
@@ -53,9 +53,9 @@ const Project = () => {
             >
               <div className="details w-full lg:w-[75%]">
                 <div className="tittle-date w-full flex gap-2 lg:gap-1 items-end h-auto">
-                  <h1 className="lg:text-4xl text-2xl font-semibold">Banking-Platform</h1>
+                  <h1 className="lg:text-3xl text-xl font-semibold">Banking-Platform</h1>
                   <span
-                    className="align-text-bottom bg-black text-white lg:bg-transparent hover:bg-black hover:text-white lg:text-black text-sm rounded-full py-[0.2rem] px-[0.5rem]"
+                    className="align-text-bottom bg-black text-white lg:bg-transparent hover:bg-black hover:text-white lg:text-black text-[0.5rem] md:text-sm rounded-full py-[0.2rem] px-[0.5rem]"
                   >
                     Mar 2025 - July 2025
                   </span>

@@ -69,11 +69,11 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="social-media flex justify-evenly w-full h-[4rem]">
+          <div className="social-media flex justify-evenly w-full h-[8rem]">
             <a
               href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
               target="_blank"
-              className=" group hover:text-white text-white lg:text-black justify-center  flex md:gap-2 gap-1 bg-[#0037ff]  hover:bg-[#0037ff] rounded-lg lg:rounded-2xl hover:rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer  px-6"
+              className=" group hover:text-white text-white lg:text-black justify-center  flex md:gap-2 gap-1 bg-[#0037ff]  hover:bg-[#0037ff] rounded-lg lg:rounded-2xl hover:rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer h-fit p-4  lg:px-6"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 LinkedIn
@@ -87,7 +87,7 @@ const Contact = () => {
             <a
               href="https://github.com/Paramjitsaikia001"
               target="_blank"
-              className=" group hover:text-white text-black  flex md:gap-2 bg-[#ffffff]  hover:bg-[#000000] lg:rounded-2xl hover:rounded-4xl rounded-full transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer py-4 px-6 h-full"
+              className=" group hover:text-white text-black  flex md:gap-2 bg-[#ffffff]  hover:bg-[#000000] lg:rounded-2xl hover:rounded-4xl rounded-full transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer h-fit p-4  lg:px-6"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 Github
@@ -101,7 +101,7 @@ const Contact = () => {
             <a
               href="https://x.com/Paramjit_saikia"
               target="_blank"
-              className=" group hover:text-white text-black  flex md:gap-2 bg-black hover:bg-[#000000] rounded-md lg:rounded-xl hover:rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer py-4 px-6"
+              className=" group hover:text-white text-black  flex md:gap-2 bg-black hover:bg-[#000000] rounded-md lg:rounded-xl hover:rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer h-fit p-4  lg:px-6"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 Twitter
@@ -115,7 +115,7 @@ const Contact = () => {
             <a
               href="https://www.instagram.com/paramjit_saikia/"
               target="_blank"
-              className=" group hover:text-white text-black  flex md:gap-2 md:bg-gradient-to-r  hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2] md:rounded-4xl h-full lg:rounded-2xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer px-4"
+              className=" group hover:text-white text-black  flex md:gap-2 bg-gradient-to-r  hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2] rounded-4xl md:rounded-4xl  lg:rounded-2xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer h-fit p-4  lg:px-6"
             >
               <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
                 Instagram
@@ -123,7 +123,7 @@ const Contact = () => {
               <p className="text-sm text-white hidden md:block lg:hidden">
                 Instagram
               </p>
-              <Instagram className=" text-white w-10 h-10 stroke-3 group-hover:stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
+              <Instagram className=" text-white  stroke-3 group-hover:stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
             </a>
           </div>
         </div>

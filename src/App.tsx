@@ -11,24 +11,23 @@ import Contact from "./components/contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
+import { Twitter, Github, Instagram, Linkedin } from "lucide-react";
 function App() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".components", {
-      top: "50%",
+      top: "30%",
       borderRadius: "2rem 2rem 0 0",
       duration: 1,
       scrollTrigger: {
         trigger: ".components",
-        start: "top 90%",
-        markers:true,
+        start: "top 98%",
         toggleActions: "play none none reverse",
         scrub: true,
       },
     });
-  }, []);
-
+  });
   return (
     <section
       id="home"
@@ -38,53 +37,98 @@ function App() {
       <ToastContainer className=" z-[9999]" position="top-right" />
       <div className="hero-section h-screen w-full bg-radial from-[#FFFFFF] from-0% via-[#FBFCFF] via-0% to-[#0020C2] to-100%  items-center flex flex-col relative">
         <div className=" w-full h-full flex flex-col justify-start items-center">
-
-
           <div className="intro flex flex-col w-[98%] md:w-full mt-25 items-center leading-2 relative  h-auto justify-start">
             <h2 className="font-mono  ">HELLO!👋</h2>
             <div className="flex flex-col  w-[100%]">
-              <div className="flex w-full text-end items-end justify-evenly text-[3.8rem] sm:text-[6.8rem]   md:text-[8rem] lg:text-[14rem] font-stretch-56% font-extrabold leading-none">
-                <h1 className="flex flex-col items-start leading-none relative h-full">
-                  <span className="font-serif text-[1rem] lg:text-[1.5rem] w-full text-start font-extralight md:pl-[1rem] pl-1 absolute md:top-3  lg:bottom-0 text-white">I'M</span>
-                  <span className=" tracking-tight">PARAMJIT</span></h1>
-                   <h1>SAIKIA</h1>
+              <div className="flex w-full text-end items-end justify-evenly text-[3.8rem] sm:text-[6.8rem]   md:text-[8rem] lg:text-[14rem] font-stretch-56% font-extrabold leading-none ">
+                <h1 className="flex flex-col items-start leading-none relative h-full ">
+                  <span className="font-serif text-[0.5rem] lg:text-[1.5rem] w-full text-start font-extralight md:pl-[1rem] pl-1 absolute md:top-3  lg:bottom-0 text-white">
+                    I'm
+                  </span>
+                  <span className="tracking-tight">PARAMJIT</span>
+                </h1>
+                <h1>SAIKIA</h1>
               </div>
             </div>
           </div>
 
-          <div className="second-intro flex flex-col  items-center justify-center h-full w-full p-0 m-0 absolute">
-            <p className="font-mono font-extralight flex flex-col justify-end text-[0.6rem] md:text-sm items-start w-full relative left-2 lg:left-[5%] lg:top-[10%] top-[-16%] bottom-0">
-              <span>👨‍💻 Full Stack Developer</span>
-              <span>⚡ Passionate about clean & scalable code</span>
-              <span>💡 Problem solver & quick learner</span>
-              <span>🛠️ Loves building real-world solutions</span>
-            </p>
-            <div className="image  h-full w-[99%] absolute sm:w-[70%] md:w-[60%] z-[9] top-[35%] md:top-[22%] bottom-0 flex items-end">
-               <img
-              className="w-full  md:w-[90%] lg:w-[70%]  h-[68%] md:h-[85%] top-0 lg:h-[80%] bottom-0 absolute lg:left-[15%]"
-              src={PortfolioModel}
-              alt="profile"
-            />
+          <div className="second-intro flex flex-col lg:flex-row items-center justify-between lg:justify-center h-full w-full p-0 m-0 absolute">
+            <div className=" font-extralight h-full text-center flex flex-col justify-center lg:justify-end text-[0.6rem] md:text-sm items-start lg:w-1/2 relative left-2 lg:left-[5%] lg:top-[-26%] top-[3rem] lg:text-start bottom-0">
+              <div className="w-[20rem]">
+                <h2 className="font-semibold text-lg">About me</h2>
+                <p className="text-sm font-light">
+                  I'm a passionate developer with a knack for creating dynamic
+                  and responsive web applications. My journey in tech has been
+                  fueled by curiosity and a desire to solve real-world problems.
+                </p>
+              </div>
             </div>
-            <p className="font-mono font-extralight flex flex-col   items-end  justify-end text-[0.6rem] md:text-sm  w-full md:w-[90%] relative right-2 md:right-2 md:bottom-[5%] lg:top-0 top-[-16%]">
-              <span className="inline-block">🔧 React, Node.js, MongoDB, Express</span>
-              <span className="inline-block">
-                ⚡ Passionate about clean & scalable code
-              </span>
-              <span className="inline-block">
-                🎯 Focused on performance & usability  
-              </span>
-              <span className="inline-block">
-               🌐 Responsive, SEO-friendly designs  
-              </span>
-              <span className="inline-block">            
-🤝 Open to collaborations & freelance work
-              </span>
+            <div className="image  h-full w-[99%] absolute sm:w-[70%] md:w-[60%] top-[35%] md:top-[22%] bottom-0 flex items-end">
+              <img
+                className="w-full  md:w-[90%] lg:w-[70%]  h-[68%] md:h-[85%] top-0 lg:h-[80%] bottom-0 absolute lg:left-[15%]"
+                src={PortfolioModel}
+                alt="profile"
+              />
+            </div>
+            <div className="font-mono font-extralight flex flex-col lg:w-1/2  lg:items-end items-center justify-end lg:justify-center text-[0.6rem] md:text-sm  w-full md:w-[90%] relative bottom-4  md:right-[5%] md:bottom-[5%] lg:top-26  h-full ">
+              <div className="social-media flex lg:flex-col justify-center gap-8 lg:gap-2 w-[20rem] lg:h-full h-fit  items-end">
+                <a
+                  href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
+                  target="_blank"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-[#0037ff]  lg:bg-transparent hover:bg-[#0037ff] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                >
+                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                    LinkedIn
+                  </p>
+                  <p className="text-sm text-white hidden md:block lg:hidden">
+                    LinkedIn
+                  </p>
+                  <Linkedin className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
+                </a>
 
-                
+                <a
+                  href="https://github.com/Paramjitsaikia001"
+                  target="_blank"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black  lg:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                >
+                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                    Github
+                  </p>
+                  <p className="text-sm text-white hidden md:block lg:hidden">
+                    Github
+                  </p>
+                  <Github className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
+                </a>
 
+                <a
+                  href="https://x.com/Paramjit_saikia"
+                  target="_blank"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black lg:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                >
+                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                    Twitter
+                  </p>
+                  <p className="text-sm text-white hidden md:block lg:hidden">
+                    Twitter
+                  </p>
+                  <Twitter className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
+                </a>
 
-            </p>
+                <a
+                  href="https://www.instagram.com/paramjit_saikia/"
+                  target="_blank"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-gradient-to-r  lg:bg-none hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2]  h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                >
+                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                    Instagram
+                  </p>
+                  <p className="text-sm text-white hidden md:block lg:hidden">
+                    Instagram
+                  </p>
+                  <Instagram className="text-white w-8 h-8 stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,17 +146,17 @@ function App() {
             <Achievement />
           </section>
 
-          <section id="contact" className="contactclass h-full lg:h-screen  flex items-center justify-center">
+          <section
+            id="contact"
+            className="contactclass h-full lg:h-screen  flex items-center justify-center"
+          >
             <Contact />
           </section>
-           </div>
-          <section className="h-screen w-full bg-transparent">
-
-          </section>
-           
         </div>
+        <section className="h-screen w-full bg-transparent"></section>
+      </div>
 
-          <Footer />
+      <Footer />
     </section>
   );
 }
