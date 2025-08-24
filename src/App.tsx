@@ -31,17 +31,17 @@ function App() {
   return (
     <section
       id="home"
-      className="bg-[#0020C2] h-full w-full flex flex-col items-center overflow-hidden"
+      className="bg-[#0020C2] h-[100vh] w-[100vw] flex flex-col items-center overflow-hidden"
     >
       <Navbar />
       <ToastContainer className=" z-[9999]" position="top-right" />
-      <div className="hero-section h-screen w-full bg-radial from-[#FFFFFF] from-0% via-[#FBFCFF] via-0% to-[#0020C2] to-100%  items-center flex flex-col relative">
+      <div className="hero-section h-[100vh] w-[100vw] bg-radial from-[#FFFFFF] from-0% via-[#FBFCFF] via-0% to-[#0020C2] to-100%  items-center flex flex-col relative">
         <div className=" w-full h-full flex flex-col justify-start items-center">
           <div className="intro flex flex-col w-[98%] md:w-full mt-25 items-center leading-2 relative  h-auto justify-start">
             <h2 className="font-mono  ">HELLO!👋</h2>
             <div className="flex flex-col  w-[100%]">
-              <div className="flex w-full text-end items-end justify-evenly text-[3.8rem] sm:text-[6.8rem]   md:text-[8rem] lg:text-[14rem] font-stretch-56% font-extrabold leading-none ">
-                <h1 className="flex flex-col items-start leading-none relative h-full ">
+              <div className="flex w-full text-end items-end justify-evenly text-[15vw] font-stretch-56% font-extrabold leading-none ">
+                <h1 className="flex md:bg-amber-500 flex-col items-start leading-none relative h-full ">
                   <span className="font-serif text-[0.5rem] lg:text-[1.5rem] w-full text-start font-extralight md:pl-[1rem] pl-1 absolute md:top-3  lg:bottom-0 text-white">
                     I'm
                   </span>
@@ -52,8 +52,8 @@ function App() {
             </div>
           </div>
 
-          <div className="second-intro flex flex-col lg:flex-row items-center justify-between lg:justify-center h-full w-full p-0 m-0 absolute">
-            <div className=" font-extralight h-full text-center flex flex-col justify-center lg:justify-end text-[0.6rem] md:text-sm items-start lg:w-1/2 relative left-2 lg:left-[5%] lg:top-[-26%] top-[3rem] lg:text-start bottom-0">
+          <div className="second-intro flex flex-col md:flex-row items-center justify-between md:justify-center h-full w-full p-0 m-0 absolute">
+            <div className=" font-extralight h-full text-center flex flex-col justify-center lg:justify-end items-start lg:w-1/2 relative left-2 lg:left-[5%] lg:top-[-26%] top-[3rem] md:text-start bottom-0">
               <div className="w-[20rem]">
                 <h2 className="font-semibold text-lg">About me</h2>
                 <p className="text-sm font-light">
@@ -65,22 +65,19 @@ function App() {
             </div>
             <div className="image  h-full w-[99%] absolute sm:w-[70%] md:w-[60%] top-[35%] md:top-[22%] bottom-0 flex items-end">
               <img
-                className="w-full  md:w-[90%] lg:w-[70%]  h-[68%] md:h-[85%] top-0 lg:h-[80%] bottom-0 absolute lg:left-[15%]"
+                className="w-full  md:w-[70%] lg:w-[70%]  h-[68%] md:h-[85%] top-0 lg:h-[80%] bottom-0 absolute md:left-[15%]"
                 src={PortfolioModel}
                 alt="profile"
               />
             </div>
-            <div className="font-mono font-extralight flex flex-col lg:w-1/2  lg:items-end items-center justify-end lg:justify-center text-[0.6rem] md:text-sm  w-full md:w-[90%] relative bottom-4  md:right-[5%] md:bottom-[5%] lg:top-26  h-full ">
-              <div className="social-media flex lg:flex-col justify-center gap-8 lg:gap-2 w-[20rem] lg:h-full h-fit  items-end">
+            <div className="font-mono font-extralight flex flex-col lg:w-1/2  md:items-end items-center justify-end lg:justify-center text-[0.6rem] md:text-sm  w-full md:w-[90%] relative bottom-4  md:right-[5%] md:bottom-[5%] lg:top-26  h-full ">
+              <div className="social-media flex md:flex-col justify-center gap-8 md:gap-2 w-[20rem] lg:h-full h-fit  items-end">
                 <a
                   href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
                   target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-[#0037ff]  lg:bg-transparent hover:bg-[#0037ff] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-[#0037ff]  md:bg-transparent hover:bg-[#0037ff] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
                 >
                   <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    LinkedIn
-                  </p>
-                  <p className="text-sm text-white hidden md:block lg:hidden">
                     LinkedIn
                   </p>
                   <Linkedin className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
@@ -89,12 +86,9 @@ function App() {
                 <a
                   href="https://github.com/Paramjitsaikia001"
                   target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black  lg:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black  md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
                 >
                   <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Github
-                  </p>
-                  <p className="text-sm text-white hidden md:block lg:hidden">
                     Github
                   </p>
                   <Github className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
@@ -103,12 +97,9 @@ function App() {
                 <a
                   href="https://x.com/Paramjit_saikia"
                   target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black lg:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
                 >
                   <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Twitter
-                  </p>
-                  <p className="text-sm text-white hidden md:block lg:hidden">
                     Twitter
                   </p>
                   <Twitter className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
@@ -117,12 +108,9 @@ function App() {
                 <a
                   href="https://www.instagram.com/paramjit_saikia/"
                   target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-gradient-to-r  lg:bg-none hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2]  h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-gradient-to-r  md:bg-none hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2]  h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
                 >
                   <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Instagram
-                  </p>
-                  <p className="text-sm text-white hidden md:block lg:hidden">
                     Instagram
                   </p>
                   <Instagram className="text-white w-8 h-8 stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />

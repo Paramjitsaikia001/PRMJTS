@@ -70,7 +70,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center gap-1">
         <p>Full Stack Web Developer</p>
-        <h1 className="md:text-[12rem] sm:text-[5.5rem] text-7xl font-stretch-80% tracking-tight leading-none font-[900] flex text-black justify-center items-center text-center border-b-2 border-black pb-1 mb-8">
+        <h1 className="lg:text-[12rem] text-[13vw] font-stretch-80% tracking-tight leading-none font-[900] flex text-black justify-center items-center text-center border-b-2 border-black pb-1 mb-8">
           PARAMJIT SAIKIA
         </h1>
       </div>
