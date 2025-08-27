@@ -42,7 +42,7 @@ function App() {
           
           
           
-          <div className="flex  justify-center items-center h-1/2 mt-8 md:h-full w-full md:w-1/2">
+          <div className="flex  justify-center items-center h-1/2  md:h-full w-full md:w-1/2">
             <div className="flex flex-col gap-4 lg:gap-0 justify-center items-center w-full lg:w-[90%] h-[60%]">
               <div className="intro flex flex-col w-full md:w-full  items-center  h-auto justify-start">
                 <h2 className="font-mono  ">
@@ -59,14 +59,14 @@ function App() {
                         PARAMJIT
                       </span>
                     </h1>
-                    <h1 className="text-[#000021]">SAIKIA</h1>
+                    <h1 className="text-[#ffffff]">SAIKIA</h1>
                   </div>
                 </div>
               </div>
 
               <div className=" font-extralight h-full text-center items-center flex flex-col justify-center lg:text-start">
-                <h2 className="font-semibold text-[6vw] md:text-2xl text-[#fff]">About me</h2>
-                <p className=" text-[3vw] md:text-lg font-light text-[#04ffcd] w-[90%] md:w-full">
+                <h2 className="font-semibold text-[6vw] md:text-3xl text-[#fff] w-full">About me</h2>
+                <p className=" text-[3vw] md:text-lg font-light text-[#ffffff] w-[90%] md:w-full">
                   I'm a passionate developer with a knack for creating dynamic
                   and responsive web applications. My journey in tech has been
                   fueled by curiosity and a desire to solve real-world problems.
