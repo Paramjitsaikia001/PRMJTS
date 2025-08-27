@@ -50,7 +50,7 @@ function App() {
                   <span className="animate-hello">👋</span>
                 </h2>
                 <div className="flex flex-col  w-[100%]">
-                  <div className="flex w-full justify-center gap-2 text-end items-end bg-yellow-400 sm:bg-none text-[10vw] sm:text-[15vw]  md:text-[8vw] font-stretch-56% font-extrabold leading-none">
+                  <div className="flex w-full justify-center gap-2 text-end items-end  sm:bg-none text-[12vw] sm:text-[15vw]  md:text-[8vw] font-stretch-56% font-extrabold leading-none">
                     <h1 className="flex flex-col items-start h-full space-y-0 leading-none">
                       <span className="font-serif font-extralight text-[1rem] md:text-[2rem] text-[#2dcdf1] leading-none">
                         I'm
