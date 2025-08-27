@@ -29,7 +29,7 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative">
+    <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative overflow-x-hidden">
       <div className="line w-[0.1rem] h-[35rem] lg:h-[35rem] bg-[#0015ffde] top-0 left-[5rem] lg:left-[9.5rem] absolute"></div>
              
         <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] lg:left-[5rem] top-[30%] lg:top-[50%]  text-[#0015ffde] absolute z-[10]" />
@@ -155,14 +155,14 @@ const Project = () => {
             className="project-item bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] lg:w-1/2  rounded-lg flex flex-col items-start justify-center gap-2 py-3 px-2 lg:py-4 lg:px-8"
           >
             <div className="tittle-date w-full flex flex-col gap-2">
-              <h1 className="text-5xl font-[800] lg:font-semibold">CoworkAssam</h1>
+              <h1 className="text-[12vw] lg:text-6xl font-[800] lg:font-semibold">CoworkAssam</h1>
               <span
                     className=" w-fit align-text-bottom bg-white text-black lg:bg-transparent hover:bg-white hover:text-black lg:text-white text-sm rounded-full py-[0.2rem] px-[0.5rem]"
                   >
                 Mar 2025 - May 2025
               </span>
             </div>
-            <p className="text-xl font-extralight">
+            <p className="text-[5vw] lg:text-2xl font-extralight">
               A collaborative platform designed to help teams in Assam manage
               projects, communication, and tasks efficiently. Built with React,
               TailwindCSS, Node.js, Express, and MongoDB, it supports real-time

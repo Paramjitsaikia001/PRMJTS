@@ -4,7 +4,7 @@ import Project from "./components/project";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Skills from "./components/skills";
 import Achievement from "./components/Experience";
 import Contact from "./components/contact";
@@ -18,7 +18,6 @@ function App() {
 
     gsap.to(".components", {
       top: "30%",
-      borderRadius: "2rem 2rem 0 0",
       duration: 1,
       scrollTrigger: {
         trigger: ".components",
@@ -27,97 +26,148 @@ function App() {
         scrub: true,
       },
     });
-  });
+  }, []);
+
+  const boundingRef = useRef<DOMRect | null>(null);
+
   return (
     <section
       id="home"
-      className="bg-[#0020C2] h-[100vh] w-[100vw] flex flex-col items-center overflow-hidden"
+      className="bg-[var(--color-primary)] min-h-screen w-full flex flex-col items-center overflow-hidden"
     >
       <Navbar />
       <ToastContainer className=" z-[9999]" position="top-right" />
-      <div className="hero-section h-[100vh] w-[100vw] bg-radial from-[#FFFFFF] from-0% via-[#FBFCFF] via-0% to-[#0020C2] to-100%  items-center flex flex-col relative">
-        <div className=" w-full h-full flex flex-col justify-start items-center">
-          <div className="intro flex flex-col w-[98%] md:w-full mt-25 items-center leading-2 relative  h-auto justify-start">
-            <h2 className="font-mono  ">HELLO!👋</h2>
-            <div className="flex flex-col  w-[100%]">
-              <div className="flex w-full text-end items-end justify-evenly text-[15vw] font-stretch-56% font-extrabold leading-none ">
-                <h1 className="flex md:bg-amber-500 flex-col items-start leading-none relative h-full ">
-                  <span className="font-serif text-[0.5rem] lg:text-[1.5rem] w-full text-start font-extralight md:pl-[1rem] pl-1 absolute md:top-3  lg:bottom-0 text-white">
-                    I'm
-                  </span>
-                  <span className="tracking-tight">PARAMJIT</span>
-                </h1>
-                <h1>SAIKIA</h1>
+      <div className="hero-section h-[100vh] w-[100vw] bg-radial from-[#FFFFFF] from-0% via-[#7d9dfe] via-0% to-[#0020C2] to-100%  items-center flex flex-col sticky z-2">
+        <div className=" w-full lg:w-[98%] h-full flex flex-col md:flex-row justify-start items-center">
+          
+          
+          
+          <div className="flex  justify-center items-center h-1/2 mt-8 md:h-full w-full md:w-1/2">
+            <div className="flex flex-col gap-4 lg:gap-0 justify-center items-center w-full lg:w-[90%] h-[60%]">
+              <div className="intro flex flex-col w-full md:w-full  items-center  h-auto justify-start">
+                <h2 className="font-mono  ">
+                  HELLO!
+                  <span className="animate-hello">👋</span>
+                </h2>
+                <div className="flex flex-col  w-[100%]">
+                  <div className="flex w-full justify-center gap-2 text-end items-end text-[15vw]  md:text-[8vw] font-stretch-56% font-extrabold leading-none ">
+                    <h1 className="flex flex-col items-start h-full space-y-0 leading-none">
+                      <span className="font-serif font-extralight text-[1rem] md:text-[2rem] text-[#2dcdf1] leading-none">
+                        I'm
+                      </span>
+                      <span className="tracking-tight leading-none bg-gradient-to-br from-[#ffffff] to-[#00e1ff] bg-clip-text text-transparent">
+                        PARAMJIT
+                      </span>
+                    </h1>
+                    <h1 className="text-[#000021]">SAIKIA</h1>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div className="second-intro flex flex-col md:flex-row items-center justify-between md:justify-center h-full w-full p-0 m-0 absolute">
-            <div className=" font-extralight h-full text-center flex flex-col justify-center lg:justify-end items-start lg:w-1/2 relative left-2 lg:left-[5%] lg:top-[-26%] top-[3rem] md:text-start bottom-0">
-              <div className="w-[20rem]">
-                <h2 className="font-semibold text-lg">About me</h2>
-                <p className="text-sm font-light">
+              <div className=" font-extralight h-full text-center items-center flex flex-col justify-center lg:text-start">
+                <h2 className="font-semibold text-[6vw] md:text-2xl text-[#fff]">About me</h2>
+                <p className=" text-[3vw] md:text-lg font-light text-[#04ffcd] w-[90%] md:w-full">
                   I'm a passionate developer with a knack for creating dynamic
                   and responsive web applications. My journey in tech has been
                   fueled by curiosity and a desire to solve real-world problems.
                 </p>
               </div>
+
+              <div className="font-mono  w-full lg:items-start items-center justify-center">
+                <div className="social-media flex  md:flex-row lg:justify-start justify-center gap-8 md:gap-2 w-full md:h-full h-[2rem] text-[1rem] items-end">
+                  <a
+                    href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
+                    target="_blank"
+                    className="font-sans group hover:text-white text-black  flex md:gap-1 bg-[#0037ff]  md:bg-transparent hover:bg-[#ffffff] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  >
+                    <p className="text-md transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden group-hover:text-[#0037ff]">
+                      LinkedIn
+                    </p>
+                    <Linkedin className="text-[#ffffff] group-hover:text-[#0037ff] md:w-8 md:h-8 w-4 h-4 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
+                  </a>
+
+                  <a
+                    href="https://github.com/Paramjitsaikia001"
+                    target="_blank"
+                    className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black  md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  >
+                    <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                      Github
+                    </p>
+                    <Github className="text-white md:w-8 md:h-8 w-4 h-4 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
+                  </a>
+
+                  <a
+                    href="https://x.com/Paramjit_saikia"
+                    target="_blank"
+                    className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  >
+                    <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                      Twitter
+                    </p>
+                    <Twitter className="text-white md:w-8 md:h-8 w-4 h-4 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/paramjit_saikia/"
+                    target="_blank"
+                    className="font-sans group hover:text-white text-black  flex md:gap-1 bg-gradient-to-r  md:bg-none hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2]  h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-4xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
+                  >
+                    <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
+                      Instagram
+                    </p>
+                    <Instagram className="text-white md:w-8 md:h-8 w-4 h-4 stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="image  h-full w-[99%] absolute sm:w-[70%] md:w-[60%] top-[35%] md:top-[22%] bottom-0 flex items-end">
+          </div>
+
+
+
+          <div className="second-intro flex flex-col md:flex-row items-center justify-between md:justify-center lg:items-end h-1/2 md:h-full lg:w-1/2 w-[90%] p-0 m-0 ">
+            <div
+              onMouseLeave={() => (boundingRef.current = null)}
+              onMouseEnter={(ev) => {
+                boundingRef.current = ev.currentTarget.getBoundingClientRect();
+              }}
+              onMouseMove={(ev) => {
+                if (!boundingRef.current) return;
+                const x = ev.clientX - boundingRef.current.left;
+                const y = ev.clientY - boundingRef.current.top;
+                const xPercentage = x / boundingRef.current.width;
+                const yPercentage = y / boundingRef.current.height;
+                const xRotation = (xPercentage - 0.5) * 30;
+                const yRotation = (0.5 - yPercentage) * 30;
+
+                ev.currentTarget.style.setProperty(
+                  "--x-rotation",
+                  `${yRotation}deg`
+                );
+                ev.currentTarget.style.setProperty(
+                  "--y-rotation",
+                  `${xRotation}deg`
+                );
+                ev.currentTarget.style.setProperty(
+                  "--x",
+                  `${xPercentage * 100}%`
+                );
+                ev.currentTarget.style.setProperty(
+                  "--y",
+                  `${yPercentage * 100}%`
+                );
+              }}
+              className="   w-[99%]  sm:w-[70%] h-fit md:w-fit bg-gradient-to-b  from-[#00fffb] via-[#fbffed]  to-[#ffffff]  flex items-end rounded-xl md:rounded-2xl lg:rounded-4xl hover:shadow-2xl transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))] lg:mb-12"
+            >
               <img
-                className="w-full  md:w-[70%] lg:w-[70%]  h-[68%] md:h-[85%] top-0 lg:h-[80%] bottom-0 absolute md:left-[15%]"
+                className="w-[100%]  h-full  top-0 lg:h-[70%] "
                 src={PortfolioModel}
                 alt="profile"
               />
             </div>
-            <div className="font-mono font-extralight flex flex-col lg:w-1/2  md:items-end items-center justify-end lg:justify-center text-[0.6rem] md:text-sm  w-full md:w-[90%] relative bottom-4  md:right-[5%] md:bottom-[5%] lg:top-26  h-full ">
-              <div className="social-media flex md:flex-col justify-center gap-8 md:gap-2 w-[20rem] lg:h-full h-fit  items-end">
-                <a
-                  href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
-                  target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-[#0037ff]  md:bg-transparent hover:bg-[#0037ff] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
-                >
-                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    LinkedIn
-                  </p>
-                  <Linkedin className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
-                </a>
-
-                <a
-                  href="https://github.com/Paramjitsaikia001"
-                  target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black  md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-4xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
-                >
-                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Github
-                  </p>
-                  <Github className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
-                </a>
-
-                <a
-                  href="https://x.com/Paramjit_saikia"
-                  target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-black md:bg-transparent hover:bg-[#000000] h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
-                >
-                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Twitter
-                  </p>
-                  <Twitter className="text-white w-8 h-8 stroke-2 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:text-white" />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/paramjit_saikia/"
-                  target="_blank"
-                  className="font-sans group hover:text-white text-black  flex md:gap-1 bg-gradient-to-r  md:bg-none hover:bg-gradient-to-r from-[#ff00ee] to-[#ff81f2]  h-full lg:h-fit lg:w-fit rounded-2xl hover:rounded-3xl transition-all duration-300 ease-in-out overflow-hidden items-center cursor-pointer lg:px-6 p-4"
-                >
-                  <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
-                    Instagram
-                  </p>
-                  <Instagram className="text-white w-8 h-8 stroke-2  transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
-                </a>
-              </div>
-            </div>
           </div>
+
+
         </div>
       </div>
       <div className="components bg-[#011e6300] top-[100vh] h-full absolute  w-full  z-[10] ">

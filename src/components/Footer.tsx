@@ -1,7 +1,7 @@
 import { Mail, MapPinned ,Linkedin,Instagram,Github,Twitter} from "lucide-react";
 const Footer = () => {
   return (
-    <section className="footer bg-linear-120 from-[#001062] via-[#002aff] to-[#9ebdff] text-white  fixed w-full h-screen z-[-1] flex flex-col justify-between pt-48">
+    <section className="footer bg-linear-120 from-[#001062] via-[#002aff] to-[#9ebdff] text-white  fixed w-full h-screen z-[1] flex flex-col justify-between pt-48">
       <div className="middle px-12 gap-8 lg:px-[12rem] flex lg:flex-row flex-col justify-between w-full">
         <div className="profile-details flex flex-col gap-1 text-md font-semibold">
           <p className="flex gap-2 font-extralight">
