@@ -1,7 +1,7 @@
 import { Eye } from "lucide-react";
 const Experience = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-full w-full  gap-4 my-12">
+    <section className="flex flex-col items-center justify-center h-full w-full lg:w-[98%] rounded-xl  gap-4 my-12 bg-gradient-to-b to-[#ffffff00]  from-[#000000] py-12">
       <p
         className="font-semibold font-sans mx-12 bg-[#26ff00] text-[#000] rounded-full py-[0.3rem] px-[3rem] my-4"
       >
@@ -22,7 +22,9 @@ const Experience = () => {
                 <span className="text-xl flex items-center font-[500] gap-1">
                   <span>DevQuest Hackathon 2025</span>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/paramjit-saikia-21615a237/overlay/1741782696023/single-media-viewer/?profileId=ACoAADru1bIBTm1tD7DWyqPznqeAC32GHi9BOaA"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className=" group text-white hover:text-white lg:text-black  flex gap-1  bg-[#0037ff] lg:bg-transparent hover:bg-[#0037ff] rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center py-[0.1rem] px-3"
                   >
                     <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -35,8 +37,8 @@ const Experience = () => {
                   </a>
                 </span>
                 <span
-                  className="text-center bg-black text-white w-fit  text-sm rounded-full"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="text-center bg-black text-white w-fit  text-sm rounded-full py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   Feb 2025 - Feb 2025
                 </span>
@@ -102,7 +104,7 @@ const Experience = () => {
                 <span className="text-xl flex items-center font-[500] gap-1">
                   <span>Digital Media Notise Lab</span>
                   <a
-                    href="#"
+                    href=""
                     className=" group hover:text-white lg:text-black  flex gap-2 justify-center bg-[#0037ff] lg:bg-transparent text-white  hover:bg-[#0037ff] rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center py-[0.1rem] px-3"
                   >
                     <p className="text-sm transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -115,8 +117,8 @@ const Experience = () => {
                   </a>
                 </span>
                 <span
-                  className="text-center bg-white text-black w-fit  text-sm rounded-full"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="text-center bg-white text-black w-fit  text-sm rounded-full py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   Mar 2025 - May 2025
                 </span>
@@ -135,38 +137,38 @@ const Experience = () => {
               </ul>
               <p className="text-sm text-gray-600 mt-2 flex flex-wrap gap-3">
                 <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff] py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   React
                 </span>
                 <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]  py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   TailwindCSS
                 </span>
                 <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]  py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   Github
                 </span>
                 <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]  py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   Node.js
                 </span>
                  <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]  py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   Express.js
                 </span>
                   <span
-                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]"
-                  style={{ padding: "0.3rem 0.8rem" }}
+                  className="rounded-full text-center border-1 text-[#ffffff] hover:text-black border-[#ffffff] hover:bg-[#ffffff]  py-[0.3rem] px-[0.8rem]"
+                  
                 >
                   MongoDB
                 </span>

@@ -3,8 +3,8 @@ const Project = () => {
 
 
   return (
-    <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative overflow-x-hidden">
-      
+    <section className="flex flex-col items-center justify-center h-auto  lg:w-[98%] rounded-t-xl bg-gradient-to-b from-[#0173be] from-5% to-[#f7f7f700] px-2 gap-4 relative overflow-x-hidden my-12">
+
       <p
         className="font-light font-sans mx-12 bg-[#000000] text-[#fff] rounded-full"
         style={{ padding: "0.3rem 3rem ", margin: "3rem 1rem " }}
@@ -41,7 +41,9 @@ const Project = () => {
               </div>
               <div className="links flex lg:flex-col items-center justify-start  lg:justify-center gap-2 w-full lg:w-[20%]">
                 <a
-                  href="#"
+                  href="https://banking-platform-three.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className=" group  text-black  flex  gap-1  bg-[#ffff] lg:bg-none hover:bg-[#ffffff] rounded-4xl  transition-all duration-300 ease-in-out overflow-hidden items-center py-2 px-4"
                 >
                   <p className="text-md transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -53,7 +55,9 @@ const Project = () => {
                   <Eye className="text-black stroke-2 rounded-full transition-transform duration-300 ease-in-out  group-hover:translate-x-2  " />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Paramjitsaikia001/banking-platform"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className=" group  text-black  flex bg-[#ffff] lg:bg-none hover:bg-[#ffffff] rounded-4xl gap-1 transition-all duration-300 ease-in-out overflow-hidden items-center py-2 px-3"
                 >
                   <p className="text-md transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -93,7 +97,9 @@ const Project = () => {
               </div>
               <div className="links flex lg:flex-col items-center justify-start lg:justify-center gap-2 lg:w-[20%]">
                 <a
-                  href="#"
+                  href="https://paramjitsaikia001.github.io/ExamEase/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className=" group hover:text-white text-white lg:text-black  flex  bg-[#000] lg:bg-none hover:bg-[#000000] rounded-4xl gap-1 transition-all duration-300 ease-in-out overflow-hidden items-center py-2 px-4"
                 >
                   <p className="text-md transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -105,7 +111,9 @@ const Project = () => {
                   <Eye className=" stroke-2 lg:text-white rounded-full transition-transform duration-300 ease-in-out group-hover:translate-x-2  group-hover:text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Paramjitsaikia001/ExamEase"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className=" group hover:text-white bg-[#000] lg:bg-none text-white lg:text-black  flex  hover:bg-[#000000] rounded-4xl gap-1 transition-all duration-300 ease-in-out overflow-hidden items-center py-2 px-4"
                 >
                   <p className="text-md transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out whitespace-nowrap group-hover:block hidden">
@@ -141,7 +149,9 @@ const Project = () => {
             </p>
             <div className="links flex  items-center justify-center gap-2">
               <a
-                href="#"
+                href="https://coworkassam.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white text-black  flex bg-[#ffffff] hover:bg-[#000000] rounded-4xl gap-1"
                 style={{ padding: "10px 15px" }}
               >
@@ -149,7 +159,9 @@ const Project = () => {
                 <Eye className=" stroke-2 " />
               </a>
               <a
-                href="#"
+                href="https://github.com/sum1t-here/coworkassam"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white text-black  flex bg-[#ffffff] hover:bg-[#000000] rounded-4xl gap-3"
                 style={{ padding: "10px 15px" }}
               >

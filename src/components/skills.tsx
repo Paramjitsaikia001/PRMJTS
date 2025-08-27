@@ -14,7 +14,7 @@ import Figma from "../assets/figma.svg";
 import Tailwind from "../assets/tailwindcss.svg";
 const Skills = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-full w-full px-2 gap-4 overflow-x-hidden">
+    <section className="flex flex-col items-center justify-center h-full w-full px-2 gap-4 lg:w-[98%] rounded-xl overflow-x-hidden bg-gradient-to-r from-[#000c26] to-[#004cff] py-12">
       <p
         className="font-semibold font-sans mx-12 bg-[#26ff00] text-[#000] rounded-full py-1 px-4"
       >

@@ -74,7 +74,7 @@ function App() {
               </div>
 
               <div className="font-mono  w-full lg:items-start items-center justify-center">
-                <div className="social-media flex  md:flex-row lg:justify-start justify-center gap-8 md:gap-2 w-full md:h-full h-[2rem] text-[1rem] items-end">
+                <div className="social-media flex  md:flex-row lg:justify-start justify-center gap-8 md:gap-2 w-full md:h-full h-[3rem] text-[1rem] items-end">
                   <a
                     href="https://www.linkedin.com/in/paramjit-saikia-21615a237/"
                     target="_blank"
@@ -125,7 +125,7 @@ function App() {
 
 
 
-          <div className="second-intro flex flex-col md:flex-row items-center justify-between md:justify-center lg:items-end h-1/2 md:h-full lg:w-1/2 w-[90%] p-0 m-0 ">
+          <div className="second-intro flex flex-col md:flex-row items-center justify-between md:justify-center lg:items-end h-1/2 md:h-full lg:w-1/2 w-[90%] p-0 m-0  ">
             <div
               onMouseLeave={() => (boundingRef.current = null)}
               onMouseEnter={(ev) => {
@@ -171,16 +171,16 @@ function App() {
         </div>
       </div>
       <div className="components bg-[#011e6300] top-[100vh] h-full absolute  w-full  z-[10] ">
-        <div className="components-items bg-[#00081c]   w-full flex flex-col gap-[4rem] z-[11]">
-          <section id="projects" className=" h-full lg:h-screen  flex">
+        <div className="components-items bg-[#011b5d]   w-full flex flex-col gap-[4rem] z-[11]">
+          <section id="projects" className=" h-full lg:h-screen  flex justify-center">
             <Project />
           </section>
 
-          <section id="skills" className=" h-full lg:h-screen  flex">
+          <section id="skills" className=" h-full lg:h-screen  flex justify-center">
             <Skills />
           </section>
 
-          <section id="experience" className=" h-full lg:h-screen  flex">
+          <section id="experience" className=" h-full   flex justify-center">
             <Achievement />
           </section>
 
