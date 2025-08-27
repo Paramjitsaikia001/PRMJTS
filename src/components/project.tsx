@@ -1,38 +1,10 @@
-import { Github, Eye, Bug } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { Github, Eye,} from "lucide-react";
 const Project = () => {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".bug", {
-      top: "0",
-      duration: 5,
-      scrollTrigger: {
-        trigger: ".projects",
-        start: "top 70%",
-        toggleActions: "play none none reverse",
-        scrub: true,
-      },
-    });
-    gsap.to(".line", {
-      height: "9rem",
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".projects",
-        start: "top 72%",
-        toggleActions: "play none none reverse",
-        scrub: true,
-      },
-    });
-  }, []);
 
   return (
     <section className="flex flex-col items-center justify-center h-auto w-full px-2 gap-4 relative overflow-x-hidden">
-      <div className="line w-[0.1rem] h-[35rem] lg:h-[35rem] bg-[#0015ffde] top-0 left-[5rem] lg:left-[9.5rem] absolute"></div>
-             
-        <Bug className="bug w-[10rem] h-[10rem] left-[0.5%] lg:left-[5rem] top-[30%] lg:top-[50%]  text-[#0015ffde] absolute z-[10]" />
+      
       <p
         className="font-light font-sans mx-12 bg-[#000000] text-[#fff] rounded-full"
         style={{ padding: "0.3rem 3rem ", margin: "3rem 1rem " }}
@@ -40,7 +12,6 @@ const Project = () => {
         Projects
       </p>
       <div className="projects w-[100%] lg:w-[90%] h-full flex justify-center items-center relative">
-        <Github className="lg:w-[20rem] lg:h-[20rem] w-[15rem] h-[15rem] absolute left-[35%] lg:left-[70%] top-[62%] md:top-[50%] lg:top-[10%] text-[#004cff] animate-pulse " />
  
 
         <div className="projects-items w-full flex flex-col lg:flex-row gap-5 h-full lg:h-fit">

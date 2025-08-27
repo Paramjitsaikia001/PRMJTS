@@ -53,11 +53,11 @@ const Contact = () => {
         className="flex lg:flex-row flex-col gap-3 justify-between items-end lg:items-center h-full w-full px-1 py-1 "
       >
         <div className="info flex flex-col items-start justify-start lg:justify-start bg-gradient-to-t w-[98%] lg:w-1/2 from-[#006aff] to-[#f0f0f0] rounded-xl lg:rounded-2xl shadow-2xl h-full lg:h-[80%] px-2 py-3 lg:px-8 gap-6">
-          <h1 className="lg:text-9xl text-7xl font-stretch-90% font-[900] bg-gradient-to-r from-[#000000] via-[#002fff] to-blue-500 bg-clip-text text-transparent ">
+          <h1 className="lg:text-9xl text-[15vw] font-stretch-90% font-[900] bg-gradient-to-r from-[#000000] via-[#002fff] to-blue-500 bg-clip-text text-transparent ">
             Contact Me
           </h1>
           <div className="details flex flex-col gap-4">
-            <h1 className="lg:text-6xl text-blue-900 text-4xl font-[800]">PARAMJIT SAIKIA</h1>
+            <h1 className="lg:text-6xl text-blue-900 text-[10vw] font-[800]">PARAMJIT SAIKIA</h1>
             <div className="profile-details flex flex-col gap-1 text-md font-semibold">
               <p className="flex gap-2 font-extralight">
                 <Mail />
@@ -129,7 +129,7 @@ const Contact = () => {
         </div>
 
         <div className="drop-a-message rounded-xl lg:rounded-2xl h-[80%]  bg-[#ffffff6e] border-1 border-[#ffffff81] backdrop-blur-[10px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] text-white flex flex-col justify-start items-start gap-8 p-4 w-[98%]  lg:w-[50%] lg:px-8">
-          <h1 className="lg:text-8xl text-6xl font-bold">
+          <h1 className="lg:text-8xl text-[15vw] font-bold">
             Drop a{" "}
             <span className="bg-gradient-to-r from-[#51ff00] to-[#ffffff] bg-clip-text text-transparent">
               Message

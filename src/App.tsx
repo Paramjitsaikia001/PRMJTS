@@ -33,7 +33,7 @@ function App() {
   return (
     <section
       id="home"
-      className="bg-[var(--color-primary)] min-h-screen w-full flex flex-col items-center"
+      className="bg-[var(--color-primary)] min-h-screen w-full flex flex-col items-center overflow-hidden"
     >
       <Navbar />
       <ToastContainer className=" z-[9999]" position="top-right" />
@@ -50,7 +50,7 @@ function App() {
                   <span className="animate-hello">👋</span>
                 </h2>
                 <div className="flex flex-col  w-[100%]">
-                  <div className="flex w-full justify-center gap-2 text-end items-end text-[15vw]  md:text-[8vw] font-stretch-56% font-extrabold leading-none ">
+                  <div className="flex w-full justify-center gap-2 text-end items-end text-[15vw]  md:text-[8vw] font-stretch-56% font-extrabold leading-none">
                     <h1 className="flex flex-col items-start h-full space-y-0 leading-none">
                       <span className="font-serif font-extralight text-[1rem] md:text-[2rem] text-[#2dcdf1] leading-none">
                         I'm
@@ -171,7 +171,7 @@ function App() {
         </div>
       </div>
       <div className="components bg-[#011e6300] top-[100vh] h-full absolute  w-full  z-[10] ">
-        <div className="components-items bg-[#011E63]   w-full flex flex-col gap-[4rem] z-[11]">
+        <div className="components-items bg-[#00081c]   w-full flex flex-col gap-[4rem] z-[11]">
           <section id="projects" className=" h-full lg:h-screen  flex">
             <Project />
           </section>
