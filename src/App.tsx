@@ -33,7 +33,7 @@ function App() {
   return (
     <section
       id="home"
-      className="bg-[var(--color-primary)] min-h-screen w-full flex flex-col items-center overflow-hidden"
+      className="bg-[var(--color-primary)] min-h-screen w-full flex flex-col items-center"
     >
       <Navbar />
       <ToastContainer className=" z-[9999]" position="top-right" />
